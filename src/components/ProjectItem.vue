@@ -5,8 +5,8 @@
           <div class="left-card-content">
             <p class="card-title">{{proj.title}}</p>
             <p class="card-date">{{proj.date}}</p>
-            <p class="card-about">Some text Some textSome textSome textSome textSome textSome textSome textSome textSome text</p>
-            <button class="card-read-more-btn">Read More</button>
+            <p class="card-about">{{proj.description}}</p>
+            <router-link :to="'/' + proj.page" class="card-read-more-btn">Read More</router-link>
           </div>
         </div>
         <div class="right-card">
@@ -25,23 +25,30 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
 .proj-item{
   text-align: center;
   color: aliceblue;
   /* display: flex;
   justify-content: center; */
-  width: 35em;
+  width: 45em;
   height: 25em;
   background-color: antiquewhite;
   border-color: white;
   /* border-style: solid; */
   /* border-width: 1px; */
+   box-shadow: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 .left-card{
   width: 50%;
   height: 100%;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(50, 50, 50);
   display: flex;
   float: left;
   /* border-radius: 1em 0em 0em 1em; */
@@ -66,6 +73,7 @@ export default {
   text-align: center;
   color: rgb(255, 255, 255);
   font-size: 1.5rem;
+  
 }
 .card-about{
   height: 40%;
@@ -88,15 +96,19 @@ export default {
   font-size: 1.2rem;
   width: 60%;
   height: 10%;
-  background-color: inherit;
+  background-color: white;
   cursor: pointer;
   /* display: inline-block; */
-  color: white;
+  color: rgb(27, 27, 27);
   outline: none;
-  border-style: solid;
+  margin: 1em;
+  padding: 0.4em 0.7em;
+  /* border-style: solid; */
   /* position: relative; */
   bottom: 0;
-
+  border-radius: 2rem;
+  text-decoration: none;
+  font-weight: 700;
 
 }
 </style>

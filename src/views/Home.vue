@@ -1,52 +1,54 @@
 <template>
   <div class="content">
-    <Header />
     <Info />
     <Portfolio v-bind:projects="projects" />
-    <Footer />
   </div>
 </template>
 
 <script>
 import Info from "../components/Info.vue";
 import Portfolio from "../components/Portfolio.vue";
-import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
 
 export default {
   name: "Home",
   components: {
     Info,
-    Portfolio,
-    Header,
-    Footer,
+    Portfolio
   },
   data() {
     return {
       projects: [
         {
           id: 1,
-          title: "Sample Project",
-          image: require("@/assets/portfolio/test/girl_profile.png"),
+          title: "MPM in Unity",
+          description:"Simulation project where a version of the Material Point Method was implemented in Unity.",
+          image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
+          page: "mpm"
         },
         {
           id: 2,
-          title: "Sample Project",
-          image: require("@/assets/portfolio/test/girl_profile.png"),
+          title: "Softbody Simulation",
+          description:"Softbody simulation implemented in ThreeJS with a simple spring-damper system.",
+          image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
+          page: "softbody"
         },
         {
           id: 3,
           title: "Sample Project",
-          image: require("@/assets/portfolio/test/girl_profile.png"),
+          description:" ",
+          image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
+          page: "MPM"
         },
         {
           id: 4,
           title: "Sample Project",
-          image: require("@/assets/portfolio/test/girl_profile.png"),
+          description:" ",
+          image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
+          page: "MPM"
         },
       ],
     };

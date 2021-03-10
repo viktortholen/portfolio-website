@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
       <hr>
-      <p>2021 Copyright Viktor Tholén</p>
+      <p> © 2021 Viktor Tholén</p>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .footer{
   width: 100%;
   height: 4em;
@@ -23,7 +23,11 @@ export default {
 
 }
 hr{
-    width: 70%;
+    background-color: rgb(50, 50, 50);
+    border: 0 none;
+    color: #eee;
+    height: 1px;
+    width: 70%
 }
 
 </style>

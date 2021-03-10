@@ -18,16 +18,14 @@ export default {
 }
 </script>
 
-<style>
-.portfolio-background{
-}
+<style scoped>
 #portfolio-title{
   color:rgb(255, 255, 255);
   font-size: 3rem;
    text-align: center;
 }
 .portfolio{
-  background: blue;
+  /* background: blue; */
   width: 100%;
   height: 100%;
   text-align: center;
@@ -37,6 +35,7 @@ export default {
   grid-template-columns: 1fr 1fr;
   /* grid-template-rows: auto; */
   justify-items: center;
+  
 }
 .portfolio-container{
   /* width: 0%;
