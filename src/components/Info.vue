@@ -7,6 +7,10 @@
 
 
 <script>
+window.scroll(function(){
+  document.getElementsByClassName(".info").css("opacity", 1 - window.scrollTop() / 250);
+});
+
 export default {
   name: 'Info'
 }

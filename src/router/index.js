@@ -10,6 +10,7 @@ import Contact from '../views/Contact.vue'
 //posts
 import MPM from '../views/posts/MPM.vue'
 import Softbody from '../views/posts/Softbody.vue'
+import Raytracer from '../views/posts/Raytracer.vue'
 
 Vue.use(VueRouter);
 
@@ -38,10 +39,18 @@ const routes = [
         path: '/softbody',
         name: 'Softbody',
         component: Softbody
+    },
+    {
+        path: '/raytracer',
+        name: 'Raytracer',
+        component: Raytracer
     }
 ];
 
 const router = new VueRouter({
+    scrollBehavior() {
+        return { x: 0, y: 0 };
+    },    
     mode: "history",
     base: process.env.BASE_URL,
     routes

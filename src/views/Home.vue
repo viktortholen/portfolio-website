@@ -36,11 +36,11 @@ export default {
         },
         {
           id: 3,
-          title: "Sample Project",
-          description:" ",
+          title: "Ray Tracer",
+          description:"Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.",
           image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
-          page: "MPM"
+          page: "raytracer"
         },
         {
           id: 4,

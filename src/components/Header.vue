@@ -1,13 +1,14 @@
 <template>
   <div class="bar">
-    <div class="logo-container">
+    <!-- <div class="logo-container">
       <router-link class="home-link" to="/">
         <img src="../assets/logo.png" alt="" />
       </router-link>
-    </div>
+    </div> -->
     <nav class="menu">
-      <router-link class="btn" id="about" to="/about">About</router-link>
-      <router-link class="btn" id="contact" to="/contact">Contact</router-link>
+      <router-link class="btn" id="home" to="/">HOME</router-link>
+      <router-link class="btn" id="about" to="/about">ABOUT</router-link>
+      <router-link class="btn" id="contact" to="/contact">CONTACT</router-link>
     </nav>
   </div>
 </template>
@@ -46,7 +47,8 @@ img {
 }
 .bar {
   width: 100%;
-  height: 6em;
+  height: 3em;
+  background: rgb(50, 50, 50);
   /* display:flex;
   float: left; */
 }
@@ -54,11 +56,12 @@ img {
   height: 100%;
   width: 30%;
   display: flex;
-  float: right;
-  margin-right: 4em;
+  float: left;
+  margin-right: 20vh;
+
 }
 .btn {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   border: none;
   background-color: inherit;
   cursor: pointer;
@@ -67,13 +70,10 @@ img {
   outline: none;
   margin: auto;
   text-decoration: none;
+  margin-left: 4vh;
+  /* float: right; */
 }
-#about {
-  float: right;
-  margin-right: 4vh;
-}
-#contact {
-  float: right;
-  margin-right: 7vh;
+#home{
+  margin-left: 50%;
 }
 </style>

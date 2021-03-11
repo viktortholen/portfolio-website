@@ -1,12 +1,17 @@
 <template>
   <div class="mpm">
-      MPM
+      <Post/>
   </div>
 </template>
 
 <script>
-export default {
+import Post from '../../components/Post.vue';
 
+export default {
+  name: "MPM",
+  components:{
+    Post
+  }
 }
 </script>
 

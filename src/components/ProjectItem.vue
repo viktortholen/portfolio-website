@@ -1,17 +1,19 @@
 <template>
   <div class="proj-item">
-
-        <div class="left-card">
-          <div class="left-card-content">
+        <div class="card-image-container">
+          <div class="card-image-content" v-bind:style="{ 'background-image': 'url(' + proj.image + ')' }"></div>
+        </div>
+        <div class="card-info">
+          <div class="card-content">
             <p class="card-title">{{proj.title}}</p>
             <p class="card-date">{{proj.date}}</p>
             <p class="card-about">{{proj.description}}</p>
-            <router-link :to="'/' + proj.page" class="card-read-more-btn">Read More</router-link>
+            <div class="centerer">
+              <router-link :to="'/' + proj.page" class="card-read-more-btn">READ MORE</router-link>
+            </div>
           </div>
         </div>
-        <div class="right-card">
-          <div class="right-card-content" v-bind:style="{ 'background-image': 'url(' + proj.image + ')' }"></div>
-        </div>
+
         
   </div>
 </template>
@@ -27,88 +29,96 @@ export default {
 
 <style scoped>
 .proj-item{
+  position: relative;
   text-align: center;
   color: aliceblue;
-  /* display: flex;
-  justify-content: center; */
-  width: 45em;
-  height: 25em;
-  background-color: antiquewhite;
+  width: 25em;
+  height: 35em;
+  /* background-color: rgb(219, 155, 71); */
   border-color: white;
-  /* border-style: solid; */
-  /* border-width: 1px; */
-   box-shadow: 
+  /* box-shadow: 
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
     0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
+    0 100px 80px rgba(0, 0, 0, 0.12); */
 }
-.left-card{
-  width: 50%;
-  height: 100%;
-  background-color: rgb(50, 50, 50);
+.proj-item:hover .card-read-more-btn{
+  background: rgb(219, 166, 166);
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+}
+.proj-item:hover .card-image-content{
+ transform: scale(1.2);
+}
+
+.card-info{
+  position: relative;
+  width: 100%;
+  height: 40%;
+  /* background-color: rgb(50, 50, 50); */
   display: flex;
-  float: left;
-  /* border-radius: 1em 0em 0em 1em; */
+  justify-content: center;
+  /* visibility: hidden; */
+  z-index: 1000;
+  margin-top: 50px;
 }
-.right-card{
-  width: 50%;
-  height: 100%;
-  /* background-color: rgb(255, 255, 255); */
+.card-image-container{
+  position: relative;
+  width: 100%;
+  height: 40%;
   display: flex;
   float: right;
-  /* background-image: url("../assets/portfolio/test/girl_profile.png"); */
-  /* border-radius: 0em 1em 1em 0em; */
+  overflow: hidden;
 }
-.right-card-content{
+/* .proj-item:hover .left-card{
+  visibility: visible;
+} */
+.card-image-content{
+  /* top: 1px; */
   width: 100%;
   height: 100%;
   background-size: cover;
+  transition: transform .5s ease;
 }
-.left-card-content{
-  margin: 1em;
-  width: 100%;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  
+.card-content{
+  width: 80%;
+  height: 100%;
 }
 .card-about{
-  height: 40%;
+  height: 60%;
   font-size: 1rem;
-  text-align: left;
+  text-align: center;
   color: rgb(255, 255, 255);
 }
 .card-title{
-  font-size: 2rem;
-  text-align: left;
+  margin: 0.1rem 0;
+  font-size: 1.5rem;
   color: rgb(255, 255, 255);
 }
 .card-date{
-
+  margin: 0 0.2rem;
   font-size: 1rem;
-  text-align: left;
   color: rgb(153, 153, 153);
 }
 .card-read-more-btn{
-  font-size: 1.2rem;
-  width: 60%;
-  height: 10%;
-  background-color: white;
+  font-size: 1rem;
   cursor: pointer;
-  /* display: inline-block; */
-  color: rgb(27, 27, 27);
-  outline: none;
-  margin: 1em;
-  padding: 0.4em 0.7em;
-  /* border-style: solid; */
-  /* position: relative; */
-  bottom: 0;
-  border-radius: 2rem;
+  /* border-radius: 2rem; */
   text-decoration: none;
-  font-weight: 700;
-
+  font-weight: 100;
+  color: rgb(255, 255, 255);
+  outline-style: solid;
+  outline-width: 1px;
+  width: 40%;
+  height: 100%;
+  padding: 1vh;
+}
+.centerer{
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 </style>

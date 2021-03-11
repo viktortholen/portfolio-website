@@ -14,6 +14,7 @@ export default {
 
 <style scoped>
 .footer{
+  position: relative;
   width: 100%;
   height: 4em;
   text-align: center;
