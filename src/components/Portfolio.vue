@@ -1,5 +1,5 @@
 <template>
-<div class="portfolio-background">
+<div id="portfolio-background">
   <p  data-aos="ease-out-back" id="portfolio-title">PROJECTS</p>
   <div class="portfolio">
       <div class="portfolio-container" v-bind:key="proj.id" v-for="proj in projects">
@@ -19,8 +19,7 @@ export default {
 </script>
 
 <style scoped>
-.portfolio-background{
-  /* background: yellow; */
+#portfolio-background{
   width: 100%;
 }
 #portfolio-title{

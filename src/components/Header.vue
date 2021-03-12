@@ -2,9 +2,9 @@
   <div class="bar">
     <nav class="menu">
       <div id="marker"></div>
-      <router-link class="btn" id="home" to="/" @click.native="indicator">HOME</router-link>
-      <router-link class="btn" id="About" to="/about" @click.native="indicator">ABOUT</router-link>
-      <router-link class="btn" id="Contact" to="/contact" @click.native="indicator">CONTACT</router-link>
+      <router-link class="btn" id="home" to="/" @click.native="indicator">Home</router-link>
+      <router-link class="btn" id="About" to="/about" @click.native="indicator">About</router-link>
+      <router-link class="btn" id="Contact" to="/contact" @click.native="indicator">Contact</router-link>
     </nav>
   </div>
 </template>
@@ -43,6 +43,7 @@ export default {
       }
         marker.style.left = selected.offsetLeft + "px";
     },
+   
 
   }
 };
@@ -67,7 +68,8 @@ export default {
   position: absolute;
   width: 100%;
   height: 3em;
-  background: rgb(50, 50, 50);
+  /* background: rgb(27,27,27); */
+  background: inherit;
   /* display:flex;
   float: left; */
 }

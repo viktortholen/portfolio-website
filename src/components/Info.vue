@@ -3,21 +3,27 @@
     <div class="center-text">
       <h1>Hello world!</h1>
       <p>Hello, this is some interesting sentence!</p>
+       <button class="btn" id="Portfolio" @click="scrollDown">Portfolio</button>
     </div>
-    <div class="scroll-down">Scroll down!</div>
+    <div class="scroll-down">Arrow down?</div>
   </div>
 </template>
 
 
 <script>
-window.scroll(function () {
-  document
-    .getElementsByClassName(".info")
-    .css("opacity", 1 - window.scrollTop() / 250);
-});
 
 export default {
   name: "Info",
+  methods:{
+     scrollDown: function(){
+      console.log(window.innerHeight);
+      window.scrollTo({
+        top: window.innerHeight,
+        left: 0,
+        behavior: 'smooth'
+      });
+    }
+  }
 };
 </script>
 
@@ -41,9 +47,18 @@ export default {
   display: block;
   margin: auto;
   overflow: auto;
-  background-color: rgb(219, 166, 166);
+  background-color: rgb(25, 37, 59);
 }
 h1 {
   font-size: 5em;
+}
+.btn{
+  border: white;
+  border-style: solid;
+  padding: 0.5em 1.5em;
+  background: inherit;
+  color: white;
+  font-size: 1.1rem;
+  outline: none;
 }
 </style>
