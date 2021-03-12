@@ -19,7 +19,7 @@ export default {
   height: 4em;
   text-align: center;
   color: white;
-  padding-top:8em;
+  margin-top:8em;
   padding-bottom: 2em;
 
 }

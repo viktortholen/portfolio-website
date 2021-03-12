@@ -1,5 +1,5 @@
 <template>
-  <div class="proj-item">
+  <div data-aos="fade-up" class="proj-item">
         <div class="card-image-container">
           <div class="card-image-content" v-bind:style="{ 'background-image': 'url(' + proj.image + ')' }"></div>
         </div>

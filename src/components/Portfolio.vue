@@ -1,6 +1,6 @@
 <template>
 <div class="portfolio-background">
-  <p id="portfolio-title">PROJECTS</p>
+  <p  data-aos="ease-out-back" id="portfolio-title">PROJECTS</p>
   <div class="portfolio">
       <div class="portfolio-container" v-bind:key="proj.id" v-for="proj in projects">
           <ProjectItem v-bind:proj="proj"/>

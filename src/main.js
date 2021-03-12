@@ -1,15 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
 Vue.config.productionTip = false
 
-
-window.scroll(function(){
-  document.getElementsByClassName(".info").css("opacity", 1 - window.scrollTop() / 250);
-});
+// AOS.init();
 
 new Vue({
   router,
+  created () {
+    AOS.init()
+  },
   render: h => h(App),
 }).$mount('#app')

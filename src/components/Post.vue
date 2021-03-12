@@ -10,13 +10,14 @@
         </div>
     </div>
 
-      <div class="collage-image" />
-
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+    name: "Intro",
+    
+};
 </script>
 
 <style scoped>
