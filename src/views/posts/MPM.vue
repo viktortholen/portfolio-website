@@ -1,19 +1,19 @@
 <template>
   <div class="mpm">
       <Post/>
-      <TextBlock/>
+      <!-- <TextBlock/> -->
   </div>
 </template>
 
 <script>
 import Post from '../../components/Post.vue';
-import TextBlock from '../../components/posts-comp/TextBlock.vue';
+// import TextBlock from '../../components/posts-comp/TextBlock.vue';
 
 export default {
   name: "MPM",
   components:{
     Post,
-    TextBlock
+    // TextBlock
   }
 }
 </script>

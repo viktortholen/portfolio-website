@@ -45,7 +45,7 @@ export default {
   text-align: center;
   color: aliceblue;
   display: block;
-  margin: auto;
+  margin: 0;
   overflow: auto;
   background-color: rgb(25, 37, 59);
 }

@@ -11,8 +11,8 @@ import Contact from '../views/Contact.vue'
 import MPM from '../views/posts/MPM.vue'
 import Softbody from '../views/posts/Softbody.vue'
 import Raytracer from '../views/posts/Raytracer.vue'
-
 Vue.use(VueRouter);
+
 
 const routes = [
     {
