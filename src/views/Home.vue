@@ -13,7 +13,7 @@ export default {
   name: "Home",
   components: {
     Info,
-    Portfolio
+    Portfolio,
   },
   data() {
     return {
@@ -21,34 +21,41 @@ export default {
         {
           id: 1,
           title: "MPM in Unity",
-          description:"Simulation project where a version of the Material Point Method was implemented in Unity.",
+          tags: "VFX Simulation",
+          description:
+            "Simulation project where a version of the Material Point Method was implemented in Unity.",
           image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
-          page: "mpm"
+          page: "mpm",
         },
         {
           id: 2,
           title: "Softbody Simulation",
-          description:"Softbody simulation implemented in ThreeJS with a simple spring-damper system.",
+          tags: "VFX Simulation",
+          description:
+            "Softbody simulation implemented in ThreeJS with a simple spring-damper system.",
           image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
-          page: "softbody"
+          page: "softbody",
         },
         {
           id: 3,
           title: "Ray Tracer",
-          description:"Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.",
+          tags: "VFX Simulation",
+          description:
+            "Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.",
           image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
-          page: "raytracer"
+          page: "raytracer",
         },
         {
           id: 4,
           title: "Sample Project",
-          description:" ",
+          tags: "VFX Simulation",
+          description: " ",
           image: require("@/assets/portfolio/test/test.jpg"),
           date: "2021-02-01",
-          page: "MPM"
+          page: "MPM",
         },
       ],
     };

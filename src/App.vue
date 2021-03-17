@@ -16,7 +16,11 @@ export default {
   components: {
     Header,
     Footer
+  },
+  created(){
+    localStorage.removeItem("scroll");
   }
+
 }
 </script>
 

@@ -9,10 +9,11 @@
     <div class="flex-content">
       <div class="flex-wrapper">
         <div class="post-title">
-          <h1>Title</h1>
+          <h2 id="title">{{proj.title}}</h2>
         </div>
         <div class="text-container">
           <div class="text">
+            
             It is a long established fact that a reader will be distracted by
             the readable content of a page when looking at its layout. The point
             of using Lorem Ipsum is that it has a more-or-less normal
@@ -28,13 +29,16 @@
       </div>
       <div class="links-section">
         <div class="links-container">
+          <p>Tools: </p>
+          <p>Frameworks: </p>
+          <p>Languages: </p>
           <p>Github: </p>
-          <p>Github: </p>
-          <p>Github: </p>
-          <p>Github: </p>
-          <p>Github: </p>
-          <p>Github: </p>
+
         </div>
+      </div>
+
+      <div class="images-container">
+
       </div>
     </div>
 
@@ -45,15 +49,17 @@
 <script>
 export default {
   name: "Post",
+  props:["proj"],
 };
 </script>
 
 <style scoped>
-/* .post {
+.post {
+  max-width: 80%;
+  justify-content: center;
   margin: auto;
-  width: 50vw;
-  height: 50vh;
-} */
+  margin-top: 2%;
+}
 .links-container{
   padding: 10%;
   color: rgb(209, 209, 209);
@@ -66,6 +72,7 @@ export default {
   width: 40%;
   height: auto;
   justify-content: center;
+  font-size: 1.2rem;
 }
 .flex-content {
   display: flex;
@@ -92,9 +99,13 @@ export default {
 }
 .text {
   color: white;
+  font-size: 1.2rem;
+}
+#title{
+  font-size: 2rem;
 }
 .post-title {
-  width: 30%;
+  width: 100%;
   height: auto;
   justify-content: center;
   color: white;

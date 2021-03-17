@@ -61,4 +61,9 @@ h1 {
   font-size: 1.1rem;
   outline: none;
 }
+.btn:hover{
+  background: white;
+  color: rgb(25, 37, 59);
+  transition: 0.3s ease;
+}
 </style>
