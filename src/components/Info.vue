@@ -16,7 +16,6 @@ export default {
   name: "Info",
   methods:{
      scrollDown: function(){
-      console.log(window.innerHeight);
       window.scrollTo({
         top: window.innerHeight,
         left: 0,

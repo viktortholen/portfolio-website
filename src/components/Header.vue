@@ -5,6 +5,7 @@
       <router-link class="btn" id="home" to="/" @click.native="indicator">Home</router-link>
       <router-link class="btn" id="About" to="/about" @click.native="indicator">About</router-link>
       <router-link class="btn" id="Contact" to="/contact" @click.native="indicator">Contact</router-link>
+      <a href="https://www.linkedin.com/in/viktor-tholen"><img class="linkedin-logo" src="../assets/linkedin_logo.png"/></a>
     </nav>
   </div>
 </template>
@@ -50,15 +51,23 @@ export default {
 </script>
 
 <style scoped>
+.linkedin-logo{
+  width: 1.7em;
+  height: 1.7em;
+  object-fit: cover;
+  position: absolute;
+  right: 2em;
+  top: 1.5em;
+}
 #marker{
   position: absolute;
   height: 2px;
   width: 6.6em;
   background: white;
   text-decoration: none;
-  margin-top: 2.95em;
+  margin-top: 3.5em;
   border-radius: 2rem;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .home-link{
   height: 100%;
@@ -67,7 +76,7 @@ export default {
 .bar {
   position: absolute;
   width: 100%;
-  height: 3em;
+  height: 5em;
   /* background: rgb(27,27,27); */
   background: inherit;
   /* display:flex;

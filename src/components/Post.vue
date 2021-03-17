@@ -6,8 +6,8 @@
         alt=""
       />
     </div>
-    <div class="flex-content">
-      <div class="flex-wrapper">
+    <div class="flex-container">
+      <div class="left-side">
         <div class="post-title">
           <h2 id="title">{{proj.title}}</h2>
         </div>
@@ -27,7 +27,7 @@
           </div>
         </div>
       </div>
-      <div class="links-section">
+      <div class="right-side">
         <div class="links-container">
           <p>Tools: </p>
           <p>Frameworks: </p>
@@ -37,9 +37,9 @@
         </div>
       </div>
 
-      <div class="images-container">
+      <!-- <div class="images-container">
 
-      </div>
+      </div> -->
     </div>
 
     <div class="section-right"></div>
@@ -47,6 +47,26 @@
 </template>
 
 <script>
+// display: flex;
+//  flex-flow: row wrap;
+
+// background-color: green;
+// left:0; top:80;
+//  bottom: 400;
+//  width: 20vw;
+//  flex-grow: 1;
+//  padding: 3px;
+//  min-width: 200px;
+//  max-width: 300px
+
+// background-color: gold;
+// float: left;
+// left:20vw; 
+// flex-grow: 4;
+// top: 25;
+// margin-right: 3px;
+// padding: 8px;
+// min-width: 200px;
 export default {
   name: "Post",
   props:["proj"],
@@ -56,30 +76,37 @@ export default {
 <style scoped>
 .post {
   max-width: 80%;
-  justify-content: center;
   margin: auto;
-  margin-top: 2%;
+  margin-top: 4em;
 }
 .links-container{
-  padding: 10%;
+  /* padding: 10%; */
   color: rgb(209, 209, 209);
 }
 .links-container p{
   padding-top: 10px;
 }
-.links-section {
-  /* background: red; */
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+    margin-left: 10%;
+}
+.right-side {
   width: 40%;
   height: auto;
+  flex-grow: 1;
   justify-content: center;
   font-size: 1.2rem;
+  min-width: 300px;
+  /* background: red; */
 }
-.flex-content {
-  display: flex;
-}
-.flex-wrapper {
-  width: 40%;
-  margin-left: 20%;
+.left-side {
+  width: 60%;
+  flex-grow: 4;
+  /* margin-right: 20%; */
+  /* min-width: 200px; */
+  /* background: blue; */
 }
 .section-right {
   position: fixed;
@@ -90,7 +117,7 @@ export default {
   margin-left: 65%;
   z-index: -100;
   margin-top: 0;
-  background: rgb(31, 31, 31);
+  background: rgb(34, 34, 34);
 }
 .text-container {
   width: 80%;
@@ -119,9 +146,12 @@ export default {
 }
 .container img {
   margin: auto;
-  width: 60%;
+  width: 80%;
   height: auto;
   display: flex;
   justify-content: center;
 }
+
+
+
 </style>
