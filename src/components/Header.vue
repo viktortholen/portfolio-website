@@ -3,7 +3,7 @@
     <nav class="menu">
       <div id="marker"></div>
       <router-link class="btn" id="home" to="/" @click.native="indicator">Home</router-link>
-      <router-link class="btn" id="About" to="/about" @click.native="indicator">About</router-link>
+      <router-link class="btn" id="About" to="/about" @click.native="indicator">CV</router-link>
       <router-link class="btn" id="Contact" to="/contact" @click.native="indicator">Contact</router-link>
       <a href="https://www.linkedin.com/in/viktor-tholen"><img class="linkedin-logo" src="../assets/linkedin_logo.png"/></a>
     </nav>
@@ -11,15 +11,6 @@
 </template>
 
 <script>
-
-// console.log(marker)
-
-
-// items.forEach(link => {
-//   link.addEventListener('click', (e) => {
-//     indicator(e.target);
-//   })
-// });
 
 export default {
   name: "Header",

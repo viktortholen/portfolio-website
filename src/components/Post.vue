@@ -2,7 +2,7 @@
   <div class="post">
     <div class="container">
       <img
-        src="https://media3.giphy.com/media/Jo1Ox5v5pV9g9ati4S/200w.webp?cid=ecf05e47pbvp548jylvt7qlij5cadgcq2xfmfz56f68xjwu4&rid=200w.webp"
+        :src="proj.image"
         alt=""
       />
     </div>
@@ -14,25 +14,15 @@
         <div class="text-container">
           <div class="text">
             
-            It is a long established fact that a reader will be distracted by
-            the readable content of a page when looking at its layout. The point
-            of using Lorem Ipsum is that it has a more-or-less normal
-            distribution of letters, as opposed to using 'Content here, content
-            here', making it look like readable English. Many desktop publishing
-            packages and web page editors now use Lorem Ipsum as their default
-            model text, and a search for 'lorem ipsum' will uncover many web
-            sites still in their infancy. Various versions have evolved over the
-            years, sometimes by accident, sometimes on purpose (injected humour
-            and the like).
+            {{proj.description}}
           </div>
         </div>
       </div>
       <div class="right-side">
         <div class="links-container">
-          <p>Tools: </p>
-          <p>Frameworks: </p>
-          <p>Languages: </p>
-          <p>Github: </p>
+          <p>Tools: {{proj.tools}}</p>
+          <p>Languages: {{proj.lang}}</p>
+          <p>Github: <a :href="proj.github">{{proj.githubtext}}</a></p>
 
         </div>
       </div>

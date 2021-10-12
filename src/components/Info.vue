@@ -1,8 +1,8 @@
 <template>
   <div class="info">
     <div class="center-text">
-      <h1>Hello world!</h1>
-      <p>Hello, this is some interesting sentence!</p>
+      <h1>Hi, I am Viktor Tholén</h1>
+      <p>I am a 5th year MSc student in Media Technology and Engineering</p>
        <button class="btn" id="Portfolio" @click="scrollDown">Portfolio</button>
     </div>
     <div class="scroll-down">Arrow down?</div>
@@ -49,7 +49,7 @@ export default {
   background-color: rgb(25, 37, 59);
 }
 h1 {
-  font-size: 5em;
+  font-size: 3em;
 }
 .btn{
   border: white;

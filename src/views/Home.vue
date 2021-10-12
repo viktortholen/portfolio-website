@@ -24,7 +24,7 @@ export default {
           tags: "VFX Simulation",
           description:
             "Simulation project where a version of the Material Point Method was implemented in Unity.",
-          image: require("@/assets/portfolio/test/test.jpg"),
+          image: require("@/assets/portfolio/MPM/MPMThumbnail.jpg"),
           date: "2021-02-01",
           page: "mpm",
         },
@@ -34,17 +34,17 @@ export default {
           tags: "VFX Simulation",
           description:
             "Softbody simulation implemented in ThreeJS with a simple spring-damper system.",
-          image: require("@/assets/portfolio/test/test.jpg"),
+          image: require("@/assets/portfolio/Softbody/SoftbodyThumbnail.jpg"),
           date: "2021-02-01",
           page: "softbody",
         },
         {
           id: 3,
           title: "Ray Tracer",
-          tags: "VFX Simulation",
+          tags: "Rendering",
           description:
             "Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.Monte Carlo Raytracer made in C++.",
-          image: require("@/assets/portfolio/test/test.jpg"),
+          image: require("@/assets/portfolio/Raytracer/Raytracer.png"),
           date: "2021-02-01",
           page: "raytracer",
         },
