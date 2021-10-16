@@ -1,6 +1,7 @@
 <template>
   <div class="info">
     <div class="center-text">
+      <img class="profile" src="../assets/profileCircle.png" alt="">
       <h1>Hi, I am Viktor Tholén</h1>
       <p>I am a 5th year MSc student in Media Technology and Engineering</p>
        <button class="btn" id="Portfolio" @click="scrollDown">Portfolio</button>
@@ -27,8 +28,12 @@ export default {
 </script>
 
 <style scoped>
+.profile{
+  width: 15vw;
+  height: auto;
+}
 .center-text {
-  margin-top: 30vh;
+  margin-top: 15vh;
   height: 60vh;
 }
 .scroll-down {
