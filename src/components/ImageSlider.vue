@@ -6,8 +6,8 @@
         <img v-else :src="currentImg.source" />
       </div>
     </transition-group>
-    <a v-show="showNextPrevComputed" class="prev" @click="prev" href="#">&#10094; Previous</a>
-    <a v-show="showNextPrevComputed" class="next" @click="next" href="#">&#10095; Next</a>
+    <a v-show="showNextPrevComputed" class="prev" @click="prev" >&#10094; Previous</a>
+    <a v-show="showNextPrevComputed" class="next" @click="next" >&#10095; Next</a>
   </div>
 </template>
 
