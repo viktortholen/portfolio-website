@@ -10,6 +10,8 @@ import Contact from "../views/Contact.vue";
 import MPM from "../views/posts/MPM.vue";
 import Softbody from "../views/posts/Softbody.vue";
 import Raytracer from "../views/posts/Raytracer.vue";
+import Platformer from "../views/posts/Platformer.vue";
+import ARGame from "../views/posts/ARGame.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -42,6 +44,16 @@ const routes = [
     path: "/projects/raytracer",
     name: "Raytracer",
     component: Raytracer,
+  },
+  {
+    path: "/projects/2dgame",
+    name: "2D Game",
+    component: Platformer,
+  },
+  {
+    path: "/projects/argame",
+    name: "AR Game",
+    component: ARGame,
   },
 ];
 

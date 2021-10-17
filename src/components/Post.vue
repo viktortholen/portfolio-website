@@ -1,10 +1,16 @@
 <template>
   <div class="post">
     <div class="container">
+
+      <iframe v-if="proj.video" :width="'auto'" :height="'80%'" :src="proj.embedLink" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <img
+      v-else
         :src="proj.image"
         alt=""
       />
+
+    
+    
     </div>
     <div class="flex-container">
       <div class="left-side">
@@ -37,26 +43,6 @@
 </template>
 
 <script>
-// display: flex;
-//  flex-flow: row wrap;
-
-// background-color: green;
-// left:0; top:80;
-//  bottom: 400;
-//  width: 20vw;
-//  flex-grow: 1;
-//  padding: 3px;
-//  min-width: 200px;
-//  max-width: 300px
-
-// background-color: gold;
-// float: left;
-// left:20vw; 
-// flex-grow: 4;
-// top: 25;
-// margin-right: 3px;
-// padding: 8px;
-// min-width: 200px;
 export default {
   name: "Post",
   props:["proj"],
@@ -65,9 +51,9 @@ export default {
 
 <style scoped>
 .post {
-  max-width: 80%;
+  max-width: 60%;
   margin: auto;
-  margin-top: 4em;
+  margin-top: 6em;
 }
 .links-container{
   /* padding: 10%; */
@@ -83,7 +69,7 @@ export default {
     margin-left: 10%;
 }
 .right-side {
-  width: 40%;
+  width: 30%;
   height: auto;
   flex-grow: 1;
   justify-content: center;
@@ -92,7 +78,7 @@ export default {
   /* background: red; */
 }
 .left-side {
-  width: 60%;
+  width: 50%;
   flex-grow: 4;
   /* margin-right: 20%; */
   /* min-width: 200px; */
@@ -128,20 +114,19 @@ export default {
   color: white;
 }
 .container {
-  width: 100%;
-  height: auto;
-  padding-top: 5vh;
+  position: relative;
+  padding-bottom: 56.25%;
   align-content: center;
   overflow: hidden;
 }
-.container img {
-  margin: auto;
-  width: 80%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-}
 
+.container img, iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 
 
 </style>
