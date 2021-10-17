@@ -62,7 +62,7 @@ export default {
           title: "AR Game",
           tags: "Game",
           description: " ",
-          image: require("@/assets/portfolio/2DPlatformGame/thumbnail.jpg"),
+          image: require("@/assets/portfolio/ARGame/game_select.jpg"),
           date: "2021-02-01",
           page: "argame",
         },

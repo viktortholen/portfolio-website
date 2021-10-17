@@ -1,12 +1,11 @@
 <template>
   <div class="info">
-    <div class="center-text">
+    <div data-aos-duration="2000" data-aos="fade-in" class="center-text">
       <img class="profile" src="../assets/profileCircle.png" alt="">
-      <h1>Hi, I am Viktor Tholén</h1>
+      <h1 >Hi, I am Viktor Tholén</h1>
       <p>I am a 5th year MSc student in Media Technology and Engineering</p>
        <button class="btn" id="Portfolio" @click="scrollDown">Portfolio</button>
     </div>
-    <div class="scroll-down">Arrow down?</div>
   </div>
 </template>
 
@@ -57,6 +56,7 @@ h1 {
   font-size: 3em;
 }
 .btn{
+  margin-top: 1em;
   border: white;
   border-style: solid;
   padding: 0.5em 1.5em;
