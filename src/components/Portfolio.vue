@@ -1,6 +1,6 @@
 <template>
 <div id="portfolio-background">
-  <p id="portfolio-title">PROJECTS</p>
+  <p id="portfolio-title">Portfolio</p>
   <div data-aos="fade-right" class="title-underline"></div>
   <div class="portfolio">
       <div class="portfolio-container" v-bind:key="proj.id" v-for="proj in projects">
@@ -15,7 +15,7 @@ import ProjectItem from "./ProjectItem.vue";
 export default {
   name: 'Portfolio',
   props: ["projects"],
-  components: {ProjectItem}
+  components: {ProjectItem},
 }
 </script>
 
@@ -55,5 +55,9 @@ export default {
   padding: 5% 0% 5% 0%;
   justify-items: center;
 }
-
+@media only screen and (max-width: 600px) {
+  .portfolio-container {
+    max-width: 80%;
+  }
+}
 </style>

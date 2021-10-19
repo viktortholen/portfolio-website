@@ -40,8 +40,8 @@ body{
   margin: 0;
   padding: 0;
   background-color: rgb(27, 27, 27);
-  
 }
+/* html, body { min-height: 100%; min-width: 100%; } */
 a {
     color: white
 }

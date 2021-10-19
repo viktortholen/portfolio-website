@@ -3,7 +3,7 @@
     <nav class="menu">
       <div id="marker"></div>
       <router-link class="btn" id="home" to="/" @click.native="indicator">Home</router-link>
-      <router-link class="btn" id="About" to="/about" @click.native="indicator">CV</router-link>
+      <!-- <router-link class="btn" id="About" to="/about" @click.native="indicator">CV</router-link> -->
       <router-link class="btn" id="Contact" to="/contact" @click.native="indicator">Contact</router-link>
       <a href="https://www.linkedin.com/in/viktor-tholen"><img class="linkedin-logo" src="../assets/linkedin_logo.png"/></a>
     </nav>
@@ -42,6 +42,11 @@ export default {
 </script>
 
 <style scoped>
+@media only screen and (max-width: 600px) {
+  .bar, .menu{
+    visibility: hidden;
+  }
+}
 .linkedin-logo{
   width: 1.7em;
   height: 1.7em;
@@ -98,5 +103,8 @@ export default {
   text-align: center;
   /* margin-left: 4vh; */
   /* float: right; */
+}
+.btn:hover{
+  font-weight: bold;
 }
 </style>

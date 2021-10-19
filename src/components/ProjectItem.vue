@@ -1,20 +1,20 @@
 <template>
- <router-link :to="'/projects/' + proj.page">
-  <div  class="proj-item">
-        <div class="card-image-container">
-          <div class="card-image-content" v-bind:style="{ 'background-image': 'url(' + proj.image + ')' }"></div>
+  <div class="proj-item">
+    <router-link :to="'/projects/' + proj.page">
+      <div class="card-image-container">
+        <div class="card-image-content" v-bind:style="{ 'background-image': 'url(' + proj.image + ')' }"></div>
+      </div>
+      <div class="card-info">
+        <div class="card-content">
+          <p class="card-title">{{proj.title}}</p>
+          <p class="card-about">{{proj.tags}}</p>
         </div>
-        <div class="card-info">
-          <div class="card-content">
-            <p class="card-title">{{proj.title}}</p>
-            <p class="card-about">{{proj.tags}}</p>
-          </div>
-            <p class="card-date">{{proj.date}}</p>
-        </div>
-        
-        
+          <p class="card-date">{{proj.date}}</p>
+      </div>
+          
+          
+    </router-link>
   </div>
-  </router-link>
 </template>
 
 <script>
@@ -26,12 +26,16 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped lang="scss">
 .proj-item{
+  a {
+    
+  }
   position: relative;
   color: aliceblue;
   width: 32em;
   height: 18em;
+  padding-bottom: 56.5%;
   /* background-color: rgb(219, 155, 71); */
   border-color: white;
   box-shadow: 
@@ -104,5 +108,4 @@ export default {
   font-size: 1rem;
   color: rgb(209, 209, 209);
 }
-
 </style>
