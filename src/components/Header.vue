@@ -1,11 +1,11 @@
 <template>
-  <div class="bar">
+  <div  class="bar">
     <nav class="menu">
       <div id="marker"></div>
       <router-link class="btn" id="home" to="/" @click.native="indicator">Home</router-link>
       <!-- <router-link class="btn" id="About" to="/about" @click.native="indicator">CV</router-link> -->
       <router-link class="btn" id="Contact" to="/contact" @click.native="indicator">Contact</router-link>
-      <a href="https://www.linkedin.com/in/viktor-tholen"><img class="linkedin-logo" src="../assets/linkedin_logo.png"/></a>
+      <a v-if="windowWidthComputed > 600" href="https://www.linkedin.com/in/viktor-tholen"><img class="linkedin-logo" src="../assets/linkedin_logo.png"/></a>
     </nav>
   </div>
 </template>
@@ -18,22 +18,49 @@ export default {
     window.addEventListener('resize', this.placeIndicator);
     this.placeIndicator();
   },
+  data() {
+    return{
+        window: {
+            width: 0,
+            height: 0
+        }
+    }
+  },
+  created() {
+      window.addEventListener('resize', this.handleResize);
+      this.handleResize();
+  },
+  destroyed() {
+      window.removeEventListener('resize', this.handleResize);
+  },
+  computed:{
+    windowWidthComputed(){
+      return this.window.width;
+    }
+  },
   methods: {
+    handleResize() {
+            this.window.width = window.innerWidth;
+            this.window.height = window.innerHeight;
+    },
     indicator: function (e){
       var marker= document.querySelector("#marker");
       marker.style.left = e.srcElement.offsetLeft + "px";
     },
     placeIndicator: function(){
-      var marker = document.querySelector("#marker");
-      var selected;
+      if(this.windowWidthComputed > 600){
 
-      if(this.$route.name === "About" || this.$route.name === "Contact" ){
-        selected = document.querySelector("#" + this.$route.name);
+        var marker = document.querySelector("#marker");
+        var selected;
+
+        if(this.$route.name === "About" || this.$route.name === "Contact" ){
+          selected = document.querySelector("#" + this.$route.name);
+        }
+        else{
+          selected = document.querySelector("#home");
+        }
+          marker.style.left = selected.offsetLeft + "px";
       }
-      else{
-        selected = document.querySelector("#home");
-      }
-        marker.style.left = selected.offsetLeft + "px";
     },
    
 
@@ -42,10 +69,9 @@ export default {
 </script>
 
 <style scoped>
-@media only screen and (max-width: 600px) {
-  .bar, .menu{
-    visibility: hidden;
-  }
+
+.dropdown{
+  width: 100%;
 }
 .linkedin-logo{
   width: 1.7em;
@@ -73,20 +99,14 @@ export default {
   position: absolute;
   width: 100%;
   height: 5em;
-  /* background: rgb(27,27,27); */
   background: inherit;
-  /* display:flex;
-  float: left; */
+
 }
 .menu {
   height: 100%;
   width: 24em;
   display: flex;
-  /* float: left; */
-  /* margin-right: 10vw; */
   margin-left: 20%;
-  /* align-content: center;
-  justify-content: center; */
 }
 .btn {
   font-size: 1.1rem;
@@ -96,15 +116,17 @@ export default {
   display: inline-block;
   color: white;
   outline: none;
-  /* margin: auto 2em auto 2em; */
   margin: auto;
   width: 6em;
   text-decoration: none;
   text-align: center;
-  /* margin-left: 4vh; */
-  /* float: right; */
 }
 .btn:hover{
   font-weight: bold;
+}
+@media only screen and (max-width: 600px) {
+  .menu {
+    margin-left: 0;
+  }
 }
 </style>

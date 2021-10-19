@@ -2,8 +2,8 @@
   <div class="info">
     <div data-aos-duration="2000" data-aos="fade-in" class="center-text">
       <img class="profile" src="../assets/profileCircle.png" alt="">
-      <h1 >Hi, I am Viktor Tholén</h1>
-      <p>I am a 5th year MSc student in Media Technology and Engineering</p>
+      <h1 >Viktor Tholén</h1>
+      <p>Final year M.Sc student in Media Technology and Engineering</p>
       <div class="buttons-container">
         <button class="btn" id="Portfolio" @click="scrollDown">Portfolio</button>
         <a :href="`${publicPath}CV2021eng.pdf`" download="CV"><button class="btn" id="Portfolio">CV</button></a>
@@ -36,6 +36,7 @@ export default {
 </script>
 
 <style scoped>
+
 .profile{
   width: 15vw;
   min-width: 12em;
@@ -59,7 +60,12 @@ export default {
   background-color: rgb(25, 37, 59);
 }
 h1 {
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+p{
+  font-weight: 300;
 }
 .btn{
   margin: 1em 2em;
@@ -78,5 +84,11 @@ h1 {
   background: aliceblue;
   color: rgb(25, 37, 59);
   transition: 0.3s ease;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 10vw;
+  }
 }
 </style>

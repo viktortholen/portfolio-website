@@ -1,7 +1,7 @@
 <template>
 <div id="portfolio-background">
-  <p id="portfolio-title">Portfolio</p>
-  <div data-aos="fade-right" class="title-underline"></div>
+  <p id="portfolio-title">PORTFOLIO</p>
+  <!-- <div data-aos="fade-right" class="title-underline"></div> -->
   <div class="portfolio">
       <div class="portfolio-container" v-bind:key="proj.id" v-for="proj in projects">
           <ProjectItem v-bind:proj="proj"/>
@@ -33,7 +33,8 @@ export default {
 }
 #portfolio-title{
   color:rgb(255, 255, 255);
-  font-size: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
   text-align: center;
   margin-top: 0;
   padding-top: 5%;
@@ -55,9 +56,9 @@ export default {
   padding: 5% 0% 5% 0%;
   justify-items: center;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .portfolio-container {
     max-width: 80%;
   }
-}
+} */
 </style>

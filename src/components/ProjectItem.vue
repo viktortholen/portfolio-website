@@ -27,16 +27,14 @@ export default {
 
 
 <style scoped lang="scss">
+
 .proj-item{
-  a {
-    
-  }
   position: relative;
   color: aliceblue;
   width: 32em;
   height: 18em;
-  padding-bottom: 56.5%;
-  /* background-color: rgb(219, 155, 71); */
+  // padding-bottom: 56.5%;
+  background-color: rgb(219, 155, 71);
   border-color: white;
   box-shadow: 
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -68,7 +66,7 @@ export default {
     background-color: rgba(6, 15, 56, 0.5);
 }
 .card-image-container{
-  position: relative;
+  // position: relative;
   width: 100%;
   height: 100%;
   display: flex;
@@ -107,5 +105,11 @@ export default {
   margin:0;
   font-size: 1rem;
   color: rgb(209, 209, 209);
+}
+@media only screen and (max-width: 600px) {
+  .proj-item{
+    width: 16em;
+    height: 9em;
+  }
 }
 </style>

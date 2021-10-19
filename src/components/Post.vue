@@ -54,7 +54,7 @@ export default {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-    margin-left: 10%;
+    /* margin-left: 10%; */
 }
 .right-side {
   width: 30%;
@@ -73,8 +73,8 @@ export default {
   top: 0;
   right: 0;
   height: 100%;
-  width: 40%;
-  margin-left: 65%;
+  width: 48%;
+  margin-left: 70%;
   z-index: -100;
   margin-top: 0;
   background: rgb(34, 34, 34);
@@ -97,5 +97,9 @@ export default {
   justify-content: center;
   color: white;
 }
-
+@media only screen and (max-width: 1000px) {
+  .section-right {
+    background: inherit;
+}
+}
 </style>
