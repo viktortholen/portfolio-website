@@ -1,6 +1,6 @@
 <template>
   <div class="post">
-    <image-slider data-aos-duration="2000" data-aos="fade-in" :media="proj.media"/>
+    <image-slider data-aos-duration="1000" data-aos="fade-in" :media="proj.media"/>
     <div class="flex-container">
       <div class="left-side">
         <div class="post-title">
@@ -15,9 +15,11 @@
       </div>
       <div class="right-side">
         <div class="links-container">
-          <p>Tools: {{proj.tools}}</p>
-          <p>Languages: {{proj.lang}}</p>
-          <p>Github: <a :href="proj.github">{{proj.githubtext}}</a></p>
+          <div v-if="proj.credits !== undefined"><h4>CREDITS:</h4> {{proj.credits}}</div>
+          <div><h4>TOOLS:</h4> {{proj.tools}}</div>
+          <div><h4>LANGUAGES:</h4> {{proj.lang}}</div>
+          <div><h4>GITHUB:</h4> <a :href="proj.github">{{proj.githubtext}}</a></div>
+          <div v-if="proj.paper !== undefined"><h4>PAPER:</h4>  <a :href="`${publicPath}${proj.paper}`" :download="proj.paper">Project paper</a></div>
 
         </div>
       </div>
@@ -34,11 +36,23 @@ export default {
   components:{
     ImageSlider
   },
+  data(){
+    return {
+      publicPath: process.env.BASE_URL
+    }
+  },
   props:["proj"],
 };
 </script>
 
-<style scoped>
+<style scoped lang="scss">
+.links-container{
+  font-weight: 300;
+  h4{
+    font-weight: 600;
+  }
+
+}
 .post {
   max-width: 60%;
   margin: auto;
@@ -77,7 +91,7 @@ export default {
   margin-left: 70%;
   z-index: -100;
   margin-top: 0;
-  background: rgb(34, 34, 34);
+  background: rgb(10, 16, 26);
 }
 .text-container {
   width: 80%;

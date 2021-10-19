@@ -25,7 +25,8 @@ export default {
           tools: "Unity",
           lang: "C#",
           github: "https://github.com/viktortholen/AR-Game",
-          githubtext: "AR Game"
+          githubtext: "AR Game",
+          credits: "Viktor Tholén, Rebecka Ljung, Jonas Bertilson, Simon Brefält, Oscar Johansson, Daniel Hägglund"
         }
       
     }

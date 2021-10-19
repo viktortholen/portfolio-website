@@ -1,6 +1,6 @@
 <template>
   <div class="footer">
-      <hr>
+      <!-- <hr> -->
       <p> © 2021 Viktor Tholén</p>
   </div>
 </template>
@@ -19,12 +19,14 @@ export default {
   height: 4em;
   text-align: center;
   color: white;
-  margin-top:8em;
+  margin-top: 8em;
   padding-bottom: 2em;
-
+  /* background: rgb(10, 16, 26); */
+  font-size: .8rem;
+  color:rgb(142, 142, 143);
 }
 hr{
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(255, 255, 255);
     border: 0 none;
     color: #eee;
     height: 1px;

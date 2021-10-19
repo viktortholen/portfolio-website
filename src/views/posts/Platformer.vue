@@ -25,7 +25,8 @@ export default {
           tools: "Unity",
           lang: "C#",
           github: "https://github.com/viktortholen/TNM040-project",
-          githubtext: "2D-Platform Game"
+          githubtext: "2D-Platform Game",
+          credits: "Viktor Tholén, Philip Ngo, Julius Halldan, Henrik Rosander, Georgij Li"
         }
       
     }

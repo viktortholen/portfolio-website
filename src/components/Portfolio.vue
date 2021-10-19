@@ -19,20 +19,20 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .title-underline{
-  background: white;
+  background: $primary-color;
   width: 10em;
   height: 0.1em;
   margin: auto;
   border-radius: 10px;
 }
 #portfolio-background{
-  /* background: linear-gradient(0deg,  rgba(27,27,27) 35%, rgb(25, 37, 59) 100%); */
+  background: linear-gradient(20deg,  white 0%, rgb(207, 207, 207) 100%);
   width: 100%;
 }
 #portfolio-title{
-  color:rgb(255, 255, 255);
+  color:$primary-color;
   font-size: 3rem;
   font-weight: 700;
   text-align: center;
@@ -43,7 +43,7 @@ export default {
 .portfolio{
   width: 80vw;
   height: 100%;
-  color: aliceblue;
+  color: black;
   padding: 1vh 1vh 6vh 0;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));

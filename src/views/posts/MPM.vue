@@ -26,7 +26,9 @@ export default {
           tools: "Unity",
           lang: "C#",
           github: "https://github.com/viktortholen/MPM_Unity",
-          githubtext: "Material Point Method in Unity"
+          githubtext: "Material Point Method in Unity",
+          paper: "SFX_Project_Report.pdf",
+          credits: "Viktor Tholén"
         }
       
     }

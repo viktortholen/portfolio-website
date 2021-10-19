@@ -24,7 +24,8 @@ export default {
         tools: "THREE.JS, Matlab",
         lang: "Javascript",
         github: "https://github.com/viktortholen/TNM085-Soft-Body-Simulation",
-        githubtext: "SoftBody"
+        githubtext: "SoftBody",
+        credits: "Viktor Tholén, Philip Ngo, Linn Storesund, Henrik Rosander"
       },
     };
   },

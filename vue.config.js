@@ -1,3 +1,10 @@
 module.exports = {
-    publicPath: "/portfolio/"
+    publicPath: "/portfolio/",
+    css: {
+        loaderOptions: {
+          sass: {
+            additionalData: `@import "@/styles/styles.scss";`
+          }
+        }
+    }
 }

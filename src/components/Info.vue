@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 
 .profile{
   width: 15vw;
@@ -57,7 +57,8 @@ export default {
   justify-content: center;
   margin: 0;
   overflow: auto;
-  background-color: rgb(25, 37, 59);
+  background-color: $primary-color;
+  
 }
 h1 {
   font-size: 5rem;
