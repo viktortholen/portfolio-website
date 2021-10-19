@@ -1,7 +1,7 @@
 <template>
 <div class="centerer">
     <div class= "contact">
-        <p class=title>Contact</p>
+        <p class=title>CONTACT</p>
         <p>Mail: viktor.tholen@gmail.com</p>
         <p>Telefon: +46702980745</p>
         <p>Github: <a href="https://github.com/viktortholen">viktortholen</a></p>
@@ -21,7 +21,8 @@ export default {
 
 <style scoped>
 .title{
-    font-size: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
 }
 .centerer{
     margin: 0 auto;
