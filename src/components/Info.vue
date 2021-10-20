@@ -6,7 +6,7 @@
       <p>Final year M.Sc student in Media Technology and Engineering</p>
       <div class="buttons-container">
         <button class="btn" id="Portfolio" @click="scrollDown">Portfolio</button>
-        <a :href="`${publicPath}CV2021eng.pdf`" download="CV"><button class="btn" id="Portfolio">CV</button></a>
+        <a :href="`${publicPath}CV2021eng.pdf`"  target="_blank"><button class="btn" id="Portfolio">CV</button></a>
       </div>
       
     </div>

@@ -19,6 +19,9 @@ export default {
   },
   created(){
     localStorage.removeItem("scroll");
+  },
+  metaInfo: {
+      title: 'Viktor Tholén'
   }
 
 }
