@@ -19,7 +19,7 @@
           <div><h4>TOOLS:</h4> {{proj.tools}}</div>
           <div><h4>LANGUAGES:</h4> {{proj.lang}}</div>
           <div><h4>GITHUB:</h4> <a :href="proj.github">{{proj.githubtext}}</a></div>
-          <div v-if="proj.paper !== undefined"><h4>PAPER:</h4>  <a :href="`${publicPath}${proj.paper}`" :download="proj.paper">Project paper</a></div>
+          <div v-if="proj.paper !== undefined"><h4>PAPER:</h4>  <a :href="`${publicPath}${proj.paper}`" target="_blank">Project paper</a></div>
 
         </div>
       </div>
