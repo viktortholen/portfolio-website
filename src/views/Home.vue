@@ -19,7 +19,13 @@ export default {
     return {
       projects: [
         {
-          id: 1,
+          title: "Third person shooter",
+          tags: "Game",
+          image: require("@/assets/portfolio/ThirdpersonShooter/ThirdpersonShooter_thumbnail.jpg"),
+          date: "2021-10-25",
+          page: "3rdpersonshootergame",
+        },
+        {
           title: "MPM in Unity",
           tags: "VFX Simulation",
           description:
@@ -29,7 +35,6 @@ export default {
           page: "mpm",
         },
         {
-          id: 2,
           title: "Ray Tracer",
           tags: "Rendering",
           description:
@@ -39,7 +44,6 @@ export default {
           page: "raytracer",
         },
         {
-          id: 3,
           title: "AR Game",
           tags: "Game", 
           description: " ",
@@ -48,7 +52,6 @@ export default {
           page: "argame",
         },
         {
-          id: 4,
           title: "Softbody Simulation",
           tags: "VFX Simulation",
           description:
@@ -58,7 +61,6 @@ export default {
           page: "softbody",
         },
         {
-          id: 5,
           title: "2D Platformer Game",
           tags: "Game",
           description: " ",

@@ -3,7 +3,7 @@
   <p id="portfolio-title">PORTFOLIO</p>
   <!-- <div data-aos="fade-right" class="title-underline"></div> -->
   <div class="portfolio">
-      <div class="portfolio-container" v-bind:key="proj.id" v-for="proj in projects">
+      <div class="portfolio-container" :key="i" v-for="(proj, i) in projects">
           <ProjectItem v-bind:proj="proj"/>
       </div>
   </div>

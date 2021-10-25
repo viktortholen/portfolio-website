@@ -12,6 +12,7 @@ import Softbody from "../views/posts/Softbody.vue";
 import Raytracer from "../views/posts/Raytracer.vue";
 import Platformer from "../views/posts/Platformer.vue";
 import ARGame from "../views/posts/ARGame.vue";
+import ThirdpersonShooter from "../views/posts/ThirdpersonShooter.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -54,6 +55,11 @@ const routes = [
     path: "/projects/argame",
     name: "AR Game",
     component: ARGame,
+  },
+  {
+    path: "/projects/3rdpersonshootergame",
+    name: "ThirdpersonShooter",
+    component: ThirdpersonShooter,
   },
 ];
 
