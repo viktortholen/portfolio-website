@@ -13,6 +13,7 @@ import Raytracer from "../views/posts/Raytracer.vue";
 import Platformer from "../views/posts/Platformer.vue";
 import ARGame from "../views/posts/ARGame.vue";
 import ThirdpersonShooter from "../views/posts/ThirdpersonShooter.vue";
+import ModellingandAnimation from "../views/posts/ModellingandAnimation.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -60,6 +61,11 @@ const routes = [
     path: "/projects/3rdpersonshootergame",
     name: "ThirdpersonShooter",
     component: ThirdpersonShooter,
+  },
+  {
+    path: "/projects/ModellingandAnimation",
+    name: "ModellingandAnimation",
+    component: ModellingandAnimation,
   },
 ];
 

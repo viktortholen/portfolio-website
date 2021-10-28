@@ -1,17 +1,13 @@
 <template>
   <div class="post">
-    <image-slider data-aos-duration="1000" data-aos="fade-in" :media="proj.media"/>
+    <image-slider v-if="proj.media !== undefined" data-aos-duration="1000" data-aos="fade-in" :media="proj.media"/>
     <div class="flex-container">
       <div class="left-side">
         <div class="post-title">
           <h2 id="title">{{proj.title}}</h2>
         </div>
-        <div class="text-container">
-          <div class="text">
-            
-            {{proj.description}}
-          </div>
-        </div>
+        <slot name="content">
+        </slot>
       </div>
       <div class="right-side">
         <div class="links-container">
@@ -46,6 +42,10 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.image-container{
+  width: 70%;
+  padding: 2em 0;
+}
 .links-container{
   font-weight: 300;
   h4{
@@ -76,11 +76,12 @@ export default {
   flex-grow: 1;
   justify-content: center;
   font-size: 1.2rem;
-  min-width: 300px;
+  min-width: 400px;
 }
 .left-side {
-  width: 50%;
+  width: 60%;
   flex-grow: 4;
+  
 }
 .section-right {
   position: fixed;
@@ -115,5 +116,10 @@ export default {
   .section-right {
     background: inherit;
 }
+}
+@media only screen and (max-width: 600px) {
+  .right-side {
+    min-width: 200px;
+  }
 }
 </style>

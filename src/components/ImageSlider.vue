@@ -1,9 +1,9 @@
 <template>
   <div class="imageslider-root">
     <transition-group name="fade" tag="div">
-      <div class="image-container" v-for="i in [currentIndex]" :key="i">
+      <div :style="imageSize" class="image-container" v-for="i in [currentIndex]" :key="i">
         <iframe v-if="currentImg.video" :height="'100%'" :width="'100%'" :src="currentImg.source" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <img v-else :src="currentImg.source" />
+        <img :style="imageSize" v-else :src="currentImg.source" />
       </div>
     </transition-group>
     <a v-show="showNextPrevComputed" class="prev" @click="prev" >&#10094; Previous</a>
@@ -18,7 +18,15 @@ export default {
         media: {
             type: Array,
             required: true,
-        }
+        },
+        imageSize: {
+          type: Object,
+          required: false,
+          default() {return {
+            height: '100%',
+            width: '100%'
+          }}
+        },
     },
     data(){
         return{
@@ -70,10 +78,12 @@ export default {
 .fade-enter,
 .fade-leave-to {
   visibility: hidden;
-  width:100%;
+  width: 100%;
   opacity: 0;
 } 
 .imageslider-root{
+  width: 100%;
+  height: 100%;
   position: relative;
   padding-bottom: 56.25%;
   align-content: center;
@@ -83,9 +93,11 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
 }
+/* .image-container{
+  display: flex;
+  justify-content: center;
+} */
 .prev, .next {
   cursor: pointer;
   position: absolute;

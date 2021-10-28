@@ -26,6 +26,13 @@ export default {
           page: "3rdpersonshootergame",
         },
         {
+          title: "Modelling and Animation",
+          tags: "Computer Graphics",
+          image: require("@/assets/portfolio/ThirdpersonShooter/ThirdpersonShooter_thumbnail.jpg"),
+          date: "2021-06-02",
+          page: "ModellingandAnimation",
+        },
+        {
           title: "MPM in Unity",
           tags: "VFX Simulation",
           description:
