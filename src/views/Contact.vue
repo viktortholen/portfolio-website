@@ -3,7 +3,7 @@
     <div class= "contact">
         <p class=title>CONTACT</p>
         <p>Mail: viktor.tholen@gmail.com</p>
-        <p>Telefon: +46702980745</p>
+        <p>Phone: +46702980745</p>
         <p>Github: <a href="https://github.com/viktortholen">viktortholen</a></p>
         <p>Linkedin: <a href="https://www.linkedin.com/in/viktor-tholen">Viktor Tholén</a></p>
     </div>
