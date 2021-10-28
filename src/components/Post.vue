@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 .image-container{
   width: 70%;
   padding: 2em 0;
@@ -95,7 +96,7 @@ export default {
   background: rgb(10, 16, 26);
 }
 .text-container {
-  width: 80%;
+  width: 90%;
   height: auto;
   justify-content: center;
 }
@@ -113,13 +114,18 @@ export default {
   color: white;
 }
 @media only screen and (max-width: 1000px) {
-  .section-right {
-    background: inherit;
+.post {
+  max-width: 80%;
+  margin: auto;
+  margin-top: 6em;
 }
 }
 @media only screen and (max-width: 600px) {
   .right-side {
     min-width: 200px;
   }
+  .text-container {
+  width: 100%;
+}
 }
 </style>
