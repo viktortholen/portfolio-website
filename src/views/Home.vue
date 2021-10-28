@@ -28,7 +28,7 @@ export default {
         {
           title: "Modelling and Animation",
           tags: "Computer Graphics",
-          image: require("@/assets/portfolio/ThirdpersonShooter/ThirdpersonShooter_thumbnail.jpg"),
+          image: require("@/assets/portfolio/MoA/fluidthumbnail.jpg"),
           date: "2021-06-02",
           page: "ModellingandAnimation",
         },

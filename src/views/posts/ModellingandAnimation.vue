@@ -27,15 +27,24 @@
               Two labs was about implicit surfaces, where surfaces are described by mathematical equations instead of polygons.
 
               <h4>Implicit surface implementation</h4>
-              <p>Implicit surfaces guarantees a represntation that is free from holes and self intersection, unlike explicit surfaces. This makes it ideal for representing fluids since they tend to have problems when trying to model them explicitly. Our task was to implement operators for a framework called constructive solid geometry(CSG). We also implemented support for quadric surfaces.</p>
+              <p>Implicit surfaces guarantees a represntation that is free from holes and self intersection, unlike explicit surfaces. This makes it ideal for representing fluids since they tend to have problems when trying to model them explicitly. Our task was to implement operators for a framework called constructive solid geometry(CSG). We also implemented support for quadric surfaces. Below are the operators applied to two implicit spheres, from the left: difference, intersection and union.</p>
 
+              <div class="image-container">
+              <img class="small" :src="project.images[8]" alt="">
+              <img class="small" :src="project.images[9]" alt="">
+              <img class="small" :src="project.images[10]" alt="">
+              </div>
               <h4>Levelset methods</h4>
               <p>In this assignment we studied the signed distance property of levelsets. This allowed us to do some transformations on the implicit surface, such as advection, dilation and erosion. Additionally, we did smoothing in the form of mean curvature.</p>
               <hr>
               <h3>Fluids</h3>
-              <p>The last lab covered fluid simulation with Navier-Stokes equations using levelsets to represent the surface. The assignment was to add external forces with Euler integration, enforcing Dirichlet boundary conditions and computing the projection for volume preservation. Below is the result from this lab, exported and rendered in Blender.</p>
+              <p>The last lab covered fluid simulation with Navier-Stokes equations using levelsets to represent the surface. The assignment was to add external forces with Euler integration, enforcing Dirichlet boundary conditions and computing the projection for volume preservation.</p>
               <div class="image-container">
-                <img class="medium" :src="project.images[3]" alt="">
+              <img class="fiveimg" :src="project.images[3]" alt="">
+              <img class="fiveimg" :src="project.images[4]" alt="">
+              <img class="fiveimg" :src="project.images[5]" alt="">
+              <img class="fiveimg" :src="project.images[6]" alt="">
+              <img class="fiveimg" :src="project.images[7]" alt="">
               </div>
             </div>
           </div>
@@ -56,14 +65,26 @@ export default {
        project: 
         {
           title: "Modelling and Animation",
-          images: [require("@/assets/portfolio/MoA/cow0.png"), require("@/assets/portfolio/MoA/cow2.png"),require("@/assets/portfolio/MoA/cow-sub1.jpg"),require("@/assets/portfolio/MoA/fluid.png")],
+          images: [
+          require("@/assets/portfolio/MoA/cow0.png"), 
+          require("@/assets/portfolio/MoA/cow2.png"),
+          require("@/assets/portfolio/MoA/cow-sub1.jpg"),
+          require("@/assets/portfolio/MoA/fluid0.jpg"),
+          require("@/assets/portfolio/MoA/fluid1.jpg"),
+          require("@/assets/portfolio/MoA/fluid2.jpg"),
+          require("@/assets/portfolio/MoA/fluid3.jpg"),
+          require("@/assets/portfolio/MoA/fluid4.jpg"),
+          require("@/assets/portfolio/MoA/difference.jpg"),
+          require("@/assets/portfolio/MoA/intersection.jpg"),
+          require("@/assets/portfolio/MoA/union.jpg"),
+          ],
           date: "2020-12-15",
           page: "ModellingandAnimation",
           tools: "OpenGL",
           lang: "C++, C",
-          github: "https://github.com/viktortholen/MPM_Unity",
-          githubtext: "Material Point Method in Unity",
-          paper: "SFX_Project_Report.pdf",
+          github: "https://github.com/viktortholen/tnm079-labs",
+          githubtext: "Source Code",
+          // paper: "SFX_Project_Report.pdf",
           credits: "Viktor Tholén"
         }
       
@@ -80,6 +101,9 @@ export default {
 }
 .small{
   width: 30%;
+}
+.fiveimg{
+  width: 19.7%;
 }
 .medium{
   width: 70%;
