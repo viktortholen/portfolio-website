@@ -42,7 +42,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
 .image-container{
   width: 70%;
   padding: 2em 0;

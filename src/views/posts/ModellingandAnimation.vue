@@ -17,9 +17,11 @@
 
               <h4>Splines and subdivision</h4>
               <p>This was the third lab. It covered smooth surfaces and curves. We extended the half-edge mesh to be able to subdivide meshes with Loop's subdivision scheme.</p>
-              <img :src="project.images[0]" alt="">
-              <img :src="project.images[1]" alt="">
-              <img :src="project.images[2]" alt="">
+              <div class="image-container">
+              <img class="small" :src="project.images[1]" alt="">
+              <img class="small" :src="project.images[0]" alt="">
+              <img class="small" :src="project.images[2]" alt="">
+              </div>
               <hr>
               <h3>Implicit surfaces</h3>
               Two labs was about implicit surfaces, where surfaces are described by mathematical equations instead of polygons.
@@ -32,11 +34,10 @@
               <hr>
               <h3>Fluids</h3>
               <p>The last lab covered fluid simulation with Navier-Stokes equations using levelsets to represent the surface. The assignment was to add external forces with Euler integration, enforcing Dirichlet boundary conditions and computing the projection for volume preservation. Below is the result from this lab, exported and rendered in Blender.</p>
-
+              <div class="image-container">
+                <img class="medium" :src="project.images[3]" alt="">
+              </div>
             </div>
-          </div>
-          <div class="image-container">
-            <image-slider :media="project.media2"/>
           </div>
         </template>
       </post>
@@ -45,19 +46,17 @@
 
 <script>
 import Post from '../../components/Post.vue';
-import ImageSlider from '../../components/ImageSlider.vue';
 export default {
   name: "ModellingandAnimation",
   components:{
     Post,
-    ImageSlider
   },
   data(){
     return {
        project: 
         {
           title: "Modelling and Animation",
-          images: [require("@/assets/portfolio/MoA/cow0.png"), require("@/assets/portfolio/MoA/cow2.png"),require("@/assets/portfolio/MoA/cow-sub1.jpg")],
+          images: [require("@/assets/portfolio/MoA/cow0.png"), require("@/assets/portfolio/MoA/cow2.png"),require("@/assets/portfolio/MoA/cow-sub1.jpg"),require("@/assets/portfolio/MoA/fluid.png")],
           date: "2020-12-15",
           page: "ModellingandAnimation",
           tools: "OpenGL",
@@ -74,13 +73,26 @@ export default {
 </script>
 
 <style scoped>
-img{
+.image-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.small{
   width: 30%;
+}
+.medium{
+  width: 70%;
+  margin: 0 auto;
 }
 h3, h4{
   margin: 1rem 0 0 0;
 }
+h4{
+  font-weight: 500;
+}
 p{
   margin-top: 0;
+  font-weight: 300;
 }
 </style>
