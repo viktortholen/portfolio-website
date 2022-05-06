@@ -19,6 +19,20 @@ export default {
     return {
       projects: [
         {
+          title: "Procedural Game Map",
+          tags: "Game",
+          image: require("@/assets/portfolio/ProceduralGameMap/doorsandrooms.png"),
+          date: "2021-01-10",
+          page: "ProceduralGameMap",
+        },
+        {
+          title: "Voronoi Fracturing",
+          tags: "Computer Graphics",
+          image: require("@/assets/portfolio/VoronoiFracturing/0.png"),
+          date: "2022-01-10",
+          page: "VoronoiFracturing",
+        },
+        {
           title: "Third person shooter",
           tags: "Game",
           image: require("@/assets/portfolio/ThirdpersonShooter/ThirdpersonShooter_thumbnail.jpg"),

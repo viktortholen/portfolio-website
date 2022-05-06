@@ -14,6 +14,8 @@ import Platformer from "../views/posts/Platformer.vue";
 import ARGame from "../views/posts/ARGame.vue";
 import ThirdpersonShooter from "../views/posts/ThirdpersonShooter.vue";
 import ModellingandAnimation from "../views/posts/ModellingandAnimation.vue";
+import ProceduralGameMap from "../views/posts/ProceduralGameMap.vue";
+import VoronoiFracturing from "../views/posts/VoronoiFracturing.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -66,6 +68,16 @@ const routes = [
     path: "/projects/ModellingandAnimation",
     name: "ModellingandAnimation",
     component: ModellingandAnimation,
+  },
+  {
+    path: "/projects/VoronoiFracturing",
+    name: "VoronoiFracturing",
+    component: VoronoiFracturing,
+  },
+  {
+    path: "/projects/ProceduralGameMap",
+    name: "ProceduralGameMap",
+    component: ProceduralGameMap,
   },
 ];
 
