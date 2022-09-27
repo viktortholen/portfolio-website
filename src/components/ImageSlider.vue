@@ -34,15 +34,7 @@ export default {
             currentIndex: 0
         }
     },
-    mounted: function() {
-        if(this.media.length > 1){
-            this.startSlide();
-        }
-    },
     methods: {
-        startSlide: function() {
-        this.timer = setInterval(this.next, 4000);
-        },
         next: function() {
         this.currentIndex += 1;
         },

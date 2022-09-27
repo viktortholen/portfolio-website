@@ -16,6 +16,7 @@ import ThirdpersonShooter from "../views/posts/ThirdpersonShooter.vue";
 import ModellingandAnimation from "../views/posts/ModellingandAnimation.vue";
 import ProceduralGameMap from "../views/posts/ProceduralGameMap.vue";
 import VoronoiFracturing from "../views/posts/VoronoiFracturing.vue";
+import FlowField from "../views/posts/FlowField.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -78,6 +79,11 @@ const routes = [
     path: "/projects/ProceduralGameMap",
     name: "ProceduralGameMap",
     component: ProceduralGameMap,
+  },
+  {
+    path: "/projects/FlowField",
+    name: "FlowField",
+    component: FlowField,
   },
 ];
 
