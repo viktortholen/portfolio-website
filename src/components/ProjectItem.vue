@@ -53,22 +53,18 @@ export default {
 .proj-item:hover .card-image-content{
  transform: scale(1.2);
  visibility: visible;
- background-color: rgba(6, 15, 56, 0.5);
 }
 .proj-item:hover .card-info{
-  background-color: rgb(50, 50, 50, 1);
+  background-color: $primary-color;
 }
 .card-info{
   position: absolute;
   width: 100%;
   height: 20%;
   bottom: 0;
-   background-color: rgba(6, 15, 56, 0.5);
+  background-color:$primary-color-faded;
 
   z-index: 1000;
-}
-.card-info:hover{
-    background-color: rgba(6, 15, 56, 0.5);
 }
 .card-image-container{
   // position: relative;

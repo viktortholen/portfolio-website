@@ -33,7 +33,7 @@ export default {
           lang: "C++",
           github: "https://github.com/viktortholen/VoronoiFracturing",
           githubtext: "Voronoi Fracturing",
-          credits: "Viktor Tholén",
+          credits: "Viktor Tholén, Iris Kotsinas",
           paper: "VoronoiFracturingReport.pdf",
         }
       

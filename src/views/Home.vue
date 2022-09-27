@@ -20,14 +20,14 @@ export default {
       projects: [
         {
           title: "Flow Field Simulation",
-          tags: "Game",
+          tags: "Game Tech",
           image: require("@/assets/portfolio/FlowField/thumbnail.png"),
           date: "2022-07-17",
           page: "FlowField",
         },
         {
           title: "Procedural Game Map",
-          tags: "Game",
+          tags: "Game Tech",
           image: require("@/assets/portfolio/ProceduralGameMap/doorsandrooms.png"),
           date: "2022-01-10",
           page: "ProceduralGameMap",
