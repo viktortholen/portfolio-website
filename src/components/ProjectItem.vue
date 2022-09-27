@@ -31,8 +31,8 @@ export default {
 .proj-item{
   position: relative;
   color: aliceblue;
-  width: 32em;
-  height: 18em;
+  width: 30em;
+  height: 30em;
   // padding-bottom: 56.5%;
   background-color: rgb(219, 155, 71);
   border-color: white;
@@ -67,26 +67,22 @@ export default {
   z-index: 1000;
 }
 .card-image-container{
-  // position: relative;
   width: 100%;
   height: 100%;
-  display: flex;
-  float: right;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
-/* .proj-item:hover .left-card{
-  visibility: visible;
-} */
 .card-image-content{
-  /* top: 1px; */
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-position: 50% 50%;
   transition: transform .5s ease;
 }
 .card-content{
   position: absolute;
-  bottom:5%;
+  bottom: 20%;
   left: 5%;
 }
 .card-about{
