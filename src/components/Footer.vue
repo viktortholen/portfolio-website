@@ -1,7 +1,7 @@
 <template>
   <div class="footer">
       <!-- <hr> -->
-      <p> © 2021 Viktor Tholén</p>
+      <p> © 2022 Viktor Tholén</p>
   </div>
 </template>
 

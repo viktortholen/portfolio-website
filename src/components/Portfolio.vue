@@ -46,7 +46,7 @@ export default {
   color: black;
   padding: 1vh 1vh 6vh 0;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
   justify-items: center;
   justify-content: center;
   margin: 5% 10% 10% 10%;

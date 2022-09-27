@@ -31,8 +31,8 @@ export default {
 .proj-item{
   position: relative;
   color: aliceblue;
-  width: 30em;
-  height: 30em;
+  width: 20em;
+  height: 20em;
   // padding-bottom: 56.5%;
   background-color: rgb(219, 155, 71);
   border-color: white;
@@ -92,7 +92,7 @@ export default {
 }
 .card-title{
   margin:0;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: rgb(255, 255, 255);
 }
 .card-date{
@@ -103,10 +103,10 @@ export default {
   font-size: 1rem;
   color: rgb(209, 209, 209);
 }
-@media only screen and (max-width: 600px) {
-  .proj-item{
-    width: 16em;
-    height: 9em;
-  }
-}
+// @media only screen and (max-width: 600px) {
+//   .proj-item{
+//     width: 20em;
+//     height: 20em;
+//   }
+// }
 </style>
